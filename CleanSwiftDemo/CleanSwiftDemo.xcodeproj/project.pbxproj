@@ -145,7 +145,6 @@
 			children = (
 				3377391721BBD0B60023E909 /* AppDelegate.swift */,
 				3377391B21BBD0B60023E909 /* Main.storyboard */,
-				3377397521BC397E0023E909 /* Services */,
 				3377395121BBF1590023E909 /* Scence */,
 				3377391E21BBD0B80023E909 /* Assets.xcassets */,
 				3377392021BBD0B80023E909 /* LaunchScreen.storyboard */,
@@ -201,7 +200,6 @@
 		3377395121BBF1590023E909 /* Scence */ = {
 			isa = PBXGroup;
 			children = (
-				3377397421BC273D0023E909 /* Onboard */,
 				3377395321BBF34E0023E909 /* ForgotPassword */,
 				3377395221BBF3480023E909 /* Register */,
 				3377394521BBD2B70023E909 /* Login */,
@@ -234,20 +232,6 @@
 				3377396221BC16960023E909 /* ForgotPasswordModels.swift */,
 			);
 			path = ForgotPassword;
-			sourceTree = "<group>";
-		};
-		3377397421BC273D0023E909 /* Onboard */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Onboard;
-			sourceTree = "<group>";
-		};
-		3377397521BC397E0023E909 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

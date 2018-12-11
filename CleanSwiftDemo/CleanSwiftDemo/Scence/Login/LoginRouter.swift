@@ -26,21 +26,17 @@ class LoginRouter: NSObject, LoginRoutingLogic, LoginDataPassing {
     // MARK: Routing
     
     func routeToHome(segue: UIStoryboardSegue?) {
-        
-        //viewController?.performSegue(withIdentifier: <#T##String#>, sender: <#T##Any?#>)
-        
-        
-//        if let segue = segue {
-//            let destinationVC = segue.destination as! HomeViewController
-//            var destinationDS = destinationVC.router!.dataStore!
-//            passDataToHome(source: dataStore!, destination: &destinationDS)
-//        } else {
-//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-//            let destinationVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-//            var destinationDS = destinationVC.router!.dataStore!
-//            passDataToHome(source: dataStore!, destination: &destinationDS)
-//            navigateToHome(source: viewController!, destination: destinationVC)
-//        }
+        if let segue = segue {
+            let destinationVC = segue.destination as! HomeViewController
+            var destinationDS = destinationVC.router!.dataStore!
+            passDataToHome(source: dataStore!, destination: &destinationDS)
+        } else {
+            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let destinationVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+            var destinationDS = destinationVC.router!.dataStore!
+            passDataToHome(source: dataStore!, destination: &destinationDS)
+            navigateToHome(source: viewController!, destination: destinationVC)
+        }
     }
     
     func routeToForgotPassword(segue: UIStoryboardSegue?) {
